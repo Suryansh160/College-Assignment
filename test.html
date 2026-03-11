@@ -1,0 +1,11 @@
+<script>
+  let arr = [1, 2, 3, 4]
+  let newNumbers = [...arr, 5, 6]
+
+  let fun = (...a) => {
+    let num = [a]
+    console.log(num)
+  }
+
+  fun(prompt('Enter numbers separated by commas').split(','))
+</script>

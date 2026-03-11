@@ -1,0 +1,42 @@
+<script>
+  function sum(...numbers) {
+    let total = 0
+
+    for (let n of numbers) {
+      total += n
+    }
+
+    return total
+  }
+
+  console.log(sum(1, 2, 3, 4, 5))
+
+  const arr1 = [1, 2, 3]
+  const arr2 = [4, 5, 6]
+
+  const merged = [...arr1, ...arr2]
+
+  console.log(merged)
+
+  const user = {
+    name: 'Suryansh',
+    age: 18,
+    city: 'Lucknow'
+  }
+
+  const updatedUser = {
+    ...user,
+    age: 19,
+    country: 'India'
+  }
+
+  console.log(updatedUser)
+
+  function greet(a, b, c) {
+    console.log(a, b, c)
+  }
+
+  const nums = [10, 20, 30]
+
+  greet(...nums)
+</script>
